@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', (req, res, next) => {
-	res.status(200).send('<h1>home</h1>');
+	res.status(200).send('<h1>http-microservice home</h1>');
 })
 
 module.exports = router;
