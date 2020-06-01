@@ -8,7 +8,7 @@ exports.createNewStudent = async (req, res) => {
 		} else {
 			pool.query(`INSERT INTO student(name) VALUES('${name}')`)
 				.then((results) => {
-					return res.status(200).send(results);
+					return res.status(201).send(results);
 				})
 				.catch((error) => {
 					return res.status(400).send(error);
